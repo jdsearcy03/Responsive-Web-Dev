@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product-styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://02f0a56ef46d93f03c90-22ac5f107621879d5667e0d7ed595bdb.ssl.cf2.rackcdn.com/sites/22258/logo_images/75517_original.png?1553186357">
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#Overview">Overview</a></li>
+          <li><a class="nav-link" href="#Details">Details</a></li>
+          <li><a class="nav-link" href="#Contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="Overview">
+      <h1>What We Do</h1>
+      <iframe id="video" src="https://www.youtube.com/embed/mU6anWqZJcc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+    </section>
+    <section id="Details">
+      <h1>Details</h1>
+      <p>
+        Over the past 10 years we have created a niche by providing large hospitals with warranty replacement plans and schedules. We provide the equipment and the personnel to make sure that costly out of warranty equipment is replaced in a timely manner.
+      </p>
+      <p>
+        We can provide the personnel to come onsite and swap out those out of warranty computers so that your support staff can take care of their day to day breakfix tickets.  We use individually created scripts and procedures to make sure every swap is done with no data loss and with 100% customer satisfaction.
+      </p>
+    </section>
+    <section id="Contact">
+      <h1>Contact Us</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <fieldset>
+          <label id="name-label">Name</label>
+          <input required id="name" type="text">
+          <label id="email-label">Email</label>
+          <input required id="email" placeholder="something@example.com" name="email" type="email">
+        </fieldset>
+        <fieldset>
+          <label id="comments-label">
+            Enter your message here:
+          </label>
+          <textarea id="comments" rows="15" cols="30"></textarea>
+        </fieldset>
+        <input type="submit" id="submit"></input>
+      </form>
+    </section>
+    <footer></footer>
+  </body>
+</html>
