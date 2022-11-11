@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PowerShell Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./technical-styles.css">
+  </head>
+  <body>
+    <main id="main-doc">
+      <div class="hide">
+      <nav id="navbar">
+        <header>
+          DDN's PowerShell Profile
+        </header>
+        <ul>
+          <li><a class="nav-link" href="#Overview_and_Installation">Overview and Installation</a></li>
+          <li><a class="nav-link" href="#Tools">Tools</a></li>
+          <li><a class="nav-link" href="#Get_Apps">Get Apps</a></li>
+          <li><a class="nav-link" href="#Old_Swap">Old Swap</a></li>
+          <li><a class="nav-link" href="#New_Swap">New Swap</a></li>
+        </ul>
+      </nav>
+      </div>
+      <section class="main-section" id="Overview_and_Installation">
+        <header>
+          Overview and Installation
+        </header>
+        <p>
+          DDN uses PowerShell to automate many aspects of our job. These tools rely on specific functions that have been created by the team.
+        </p> 
+        <p>
+          In order to access these, you will first need to add the DDN PowerShell Profile to your personal PowerShell instance.
+        </p>
+        <p>
+          To set up the profile, Navigate to "Tools > Resources > Configure" and run the file called "Install DDN Profile"
+        </p>
+      </section>
+      <section class="main-section" id="Tools">
+        <header>
+          Tools
+        </header>
+        <div id="part-1">
+          <p>
+            Now that you have set up the profile, you are ready to learn how to use it.
+          </p>
+          <p>
+            Many of the functions have been built into more robust applications that are stored in our Tools folder.
+          </p>
+          <p>
+            Instead of having to constantly navigate to this folder in order to use one of the available tools, you can instead enter this one-word command into a PowerShell console:
+          </p>
+          <code>tools</code>
+          <p>
+            This command opens a dialog box with a list of all of the available apps; and you will be able to simply click on the one you need in order to run it.
+          </p>
+        </div>
+        <div id="part-2">
+          <p>
+            While the most frequently used functions have been converted into more robust applications, there are still many other helpful functions built into the DDN profile.
+          </p>
+          <p>
+            As you continue to become aquainted with these, another helpful command you can enter into the PowerShell console is:
+          </p>
+          <code>Get-Comdlets</code>
+          <p>
+            This command generates a list of all of the custom functions as well as the parameters needed to be able to run them.
+          </p>
+        </div>
+        <p>
+          While there are many useful tools, the three most commonly used on a daily basis are: Get Apps, Old Swap, and New Swap.
+        </p>
+      </section>
+      <section class="main-section" id="Get_Apps">
+        <header>
+          Get Apps
+        </header>
+        <p>
+          Although Get Apps is available as a robust application, behind the scenes, it is essentially the combination of six custom funcions:
+        </p>
+        <ul>
+          <li><code>Get-ComputerApps -ComputerName EXAMPLE_NAME</code></li>
+          <li><code>Get-Serial -ComputerName EXAMPLE_NAME</code></li>
+          <li><code>Get-Warranty -SerialNumber EXAMPLE_SERIAL</code></li>
+          <li><code>Get-Peripherals -ComputerName EXAMPLE_NAME</code></li>
+          <li><code>Get-DHCPLocation -ComputerName EXAMPLE_NAME</code></li>
+          <li><code>Get-OU -ComputerName EXAMPLE_Name</code></li>
+        </ul>
+        <p>
+          It essentially serves as an all-in-one information gathering app.
+        </p>
+      </section>
+      <section class="main-section" id="Old_Swap">
+        <header>
+          Old Swap
+        </header>
+        <p>
+          This function is called by entering:
+        </p>
+        <code>oldswap</code>
+        <p>
+          It backs up all of the users files, renames the computer, and shuts it down.
+        </p>
+      </section>
+      <section class="main-section" id="New_Swap">
+        <header>
+          New Swap
+        </header>
+        <p>
+          This application is found in "Tools>PowerShell" and should only be run locally from the new computer.
+        </p>
+        <p>
+          It restores the users files, connects their printers, renames the computer, and restarts it.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
